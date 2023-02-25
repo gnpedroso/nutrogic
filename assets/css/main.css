@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-base text-white
+    }
+    .main-color {
+        color: #77E290
+    }
+    .main-bg-color {
+        background-color: #77E290
+    }
+    ._btn-white {
+        @apply p-2 flex items-center justify-center text-gray-800 bg-gray-50 border border-transparent rounded-md font-medium w-full hover:bg-gray-200 hover:no-underline;
+      }
+      ._btn-bordered {
+        @apply p-2 flex items-center justify-center text-gray-700 main-bg-color border border-gray-50 rounded-md font-medium text-center cursor-pointer w-full hover:bg-gray-300 hover:no-underline;
+      }
+      ._input {
+        @apply text-gray-600 mb-3 w-full py-2 px-3 rounded-md outline-none border border-transparent focus:border-gray-400 focus:border;
+      }
+      ._title {
+        @apply font-semibold text-black text-left w-full text-2xl mb-4;
+      }
+      ._sub-title {
+        @apply text-gray-500 text-sm mb-2;
+      }
+}
