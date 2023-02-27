@@ -1,0 +1,124 @@
+{
+    "curiosities": [
+        {
+            "id": 0,
+            "text": "A maçã é uma das frutas mais saudáveis do mundo. Ela é rica em fibras solúveis e insolúveis, vitaminas, antioxidantes e compostos vegetais que ajudam a prevenir doenças crônicas."
+        },
+        {
+            "id": 1,
+            "text": "A soja é uma fonte rica de proteínas vegetais e contém compostos vegetais chamados isoflavonas que podem ajudar a reduzir o risco de doenças crônicas, como câncer e doenças cardíacas."
+        },
+        {
+            "id": 2,
+            "text": "O abacate é uma fruta única, pois é rico em gorduras monoinsaturadas saudáveis para o coração, além de fibras, vitaminas e minerais."
+        },
+        {
+            "id": 3,
+            "text": "O salmão é uma das melhores fontes de ácidos graxos ômega-3, que ajudam a prevenir doenças cardiovasculares e cerebrais."
+        },
+        {
+            "id": 4,
+            "text": "As nozes são uma ótima fonte de gorduras saudáveis, proteínas, fibras e antioxidantes, além de terem um perfil nutricional único que pode ajudar a prevenir doenças crônicas."
+        },
+        {
+            "id": 5,
+            "text": "A banana é uma excelente fonte de potássio, um mineral que ajuda a regular a pressão arterial e a saúde do coração."
+        },
+        {
+            "id": 6,
+            "text": "O iogurte grego é uma fonte rica de proteínas e cálcio, além de conter bactérias probióticas benéficas para a saúde intestinal."
+        },
+        {
+            "id": 7,
+            "text": "A quinoa é um grão rico em proteínas, fibras e minerais, além de ser livre de glúten."
+        },
+        {
+            "id": 8,
+            "text": "O chocolate escuro contém antioxidantes chamados flavonoides que podem ajudar a prevenir doenças cardíacas e melhorar a saúde cerebral."
+        },
+        {
+            "id": 9,
+            "text": "As cenouras são uma ótima fonte de vitamina A, um nutriente essencial para a saúde ocular."
+        },
+        {
+            "id": 10,
+            "text": "O chá verde contém compostos antioxidantes chamados catequinas que podem ajudar a prevenir doenças crônicas e melhorar a saúde cerebral."
+        },
+        {
+            "id": 11,
+            "text": "O brócolis é uma das verduras mais nutritivas, rica em vitaminas, minerais e compostos vegetais benéficos para a saúde."
+        },
+        {
+            "id": 12,
+            "text": "O abacaxi contém uma enzima chamada bromelina que pode ajudar na digestão de proteínas e aliviar a inflamação."
+        },
+        {
+            "id": 13,
+            "text": "A aveia é um grão rico em fibras solúveis, que ajudam a reduzir o colesterol e a regular o açúcar no sangue."
+        },
+        {
+            "id": 14,
+            "text": "O vinho tinto contém antioxidantes chamados resveratrol que podem ajudar a prevenir doenças cardíacas e cerebrais."
+        },
+        {
+            "id": 15,
+            "text": "Os ovos são uma fonte rica de proteínas de alta qualidade e contêm muitos nutrientes importantes, incluindo colina, uma substância importante para a saúde cerebral."
+        },
+        {
+            "id": 16,
+            "text": "A cúrcuma, um tempero amplamente utilizado na culinária indiana, contém um composto chamado curcumina que tem propriedades anti-inflamatórias e antioxidantes."
+        },
+        {
+            "id": 17,
+            "text": "A batata doce é uma excelente fonte de fibras, vitaminas e minerais, além de conter compostos vegetais benéficos para a saúde."
+        },
+        {
+            "id": 18,
+            "text": "A carne vermelha é rica em proteínas e ferro, mas o seu consumo em excesso pode aumentar o risco de doenças crônicas, como doenças cardíacas e câncer."
+        },
+        {
+            "id": 19,
+            "text": "Os mirtilos são uma das frutas mais nutritivas, ricos em antioxidantes que podem ajudar a prevenir doenças crônicas e melhorar a saúde cerebral."
+        },
+        {
+            "id": 20,
+            "text": "A água é essencial para a vida e a hidratação adequada pode ajudar a melhorar a saúde geral, manter a função cerebral e reduzir o risco de doenças renais."
+        },
+        {
+            "id": 21,
+            "text": "Os feijões são uma ótima fonte de proteínas vegetais, fibras e minerais, além de serem uma escolha saudável para quem segue uma dieta vegetariana ou vegana."
+        },
+        {
+            "id": 22,
+            "text": "Os alimentos processados e ultraprocessados, ricos em açúcares adicionados, gorduras trans e sal, podem aumentar o risco de doenças crônicas, como diabetes e doenças cardíacas."
+        },
+        {
+            "id": 23,
+            "text": "A canela é um tempero amplamente utilizado na culinária que pode ajudar a reduzir o açúcar no sangue e melhorar a sensibilidade à insulina."
+        },
+        {
+            "id": 24,
+            "text": "As leguminosas, como lentilhas, grão de bico e feijões, são ricas em fibras e proteínas vegetais e podem ajudar a reduzir o risco de doenças crônicas."
+        },
+        {
+            "id": 25,
+            "text": "O azeite de oliva é uma fonte saudável de gorduras monoinsaturadas, que podem ajudar a reduzir o risco de doenças cardíacas."
+        },
+        {
+            "id": 26,
+            "text": "Os espinafres são uma ótima fonte de ferro, fibras e vitaminas, além de conter compostos vegetais benéficos para a saúde."
+        },
+        {
+            "id": 27,
+            "text": "O mel é um adoçante natural rico em antioxidantes que podem ajudar a prevenir doenças crônicas."
+        },
+        {
+            "id": 28,
+            "text": "O café é uma das bebidas mais consumidas em todo o mundo e contém compostos antioxidantes que podem ajudar a prevenir doenças crônicas e melhorar a saúde cerebral."
+        },
+        {
+            "id": 29,
+            "text": "A abóbora é uma fonte rica de vitaminas, minerais e compostos vegetais benéficos para a saúde, além de ser baixa em calorias."
+        }
+    ]
+}

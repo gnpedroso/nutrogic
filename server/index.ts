@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
     organization: "org-OvzI9SnUXficJ9icnhlhbzzP",
-    apiKey: "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",
+    apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -25,9 +25,9 @@ app.post('/', async (req, res) => {
         Primeiramente, calcule meu TDEE  baseado nos seguintes dados: 
         Sou ${req.body.providerGender}, vivo no Brasil, tenho ${req.body.providerAge} anos, 
         peso ${req.body.providerWeight}kgs, altura ${req.body.providerHeight}cm e 
-        nível de atividade física ${req.body.providerActivityLevel} 
+        nível de atividade física ${req.body.providerActivityLevel}.
         
-        Com este valor do TDEE, monte um plano de dieta para ${req.body.dietFrequency} dias e 
+        Com este valor do TDEE, monte um plano de dieta para ${req.body.dietFrequency} dias por semana e com  
         ${req.body.mealFrequency} refeições por dia, com o objetivo de ${req.body.weightObjective}. 
         Inicialmente apresente o "Consumo médio diário" em(kcal / dia), sendo este o valor 
         de consumo calórico diário referente a esta dieta. Apresente as porções em medidas
@@ -35,9 +35,10 @@ app.post('/', async (req, res) => {
         Não utilize "xícara" e nem "colher" como valor de medido, utilize seu peso(em gramas) 
         Não apresente "1 porção de legumes", apresente qual o legume é recomendado e 
         sua quantidade(em gramas), exemplo: "200g de brócolis". 
+        Utilize produtos brasileiros de fácil acesso, não utilize frutas como "mirtilo" ou "amoras"
         
         Apresente o valor em HTML5 e cada "Dia" contendo uma classe "font-bold", 
-        contendo as refeições de todos os 5 dias, para facilitar a leitura: `
+        contendo as refeições de todos os dias, para facilitar a leitura: `
 
         const response = await openai.createCompletion({
             model: "text-davinci-003",
