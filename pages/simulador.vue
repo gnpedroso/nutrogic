@@ -11,7 +11,7 @@ const handleSubmit = async (values: Object) => {
 
     formState.isSubmitting = true;
 
-    await useFetch('http://localhost:8000/', {
+    await useFetch('http://localhost:8000/diet', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,8 +19,9 @@ const handleSubmit = async (values: Object) => {
         body: values
     })
         .then((res) => {
+            debugger;
             const data: any = res.data.value;
-            setResponse(data.message)
+            setResponse(data.message.content)
         })
         .catch(error => {
             formState.error = error.message;

@@ -3,22 +3,30 @@ import { ref, onMounted } from 'vue';
 
 let currentCuriosity = ref<string>('');
 
+interface CuriosityData {
+  curiosities: { id: number, text: string }[];
+}
+
 defineProps<{
   loading?: boolean
 }>();
 
+function generateCuriosity(data: CuriosityData, index: number) {
+  currentCuriosity.value = data.curiosities[index].text;
+
+}
 onMounted(async () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const response = await fetch('static/curiosities.json');
   const data = await response.json();
   let randomNumber = Math.floor(Math.random() * 31);
-  currentCuriosity.value = data.curiosities[randomNumber].text;
+  generateCuriosity(data, randomNumber)
 
   setInterval(() => {
     randomNumber = Math.floor(Math.random() * 31);
-    currentCuriosity.value = data.curiosities[randomNumber].text;
-  }, 10000);
+    generateCuriosity(data, randomNumber)
+  }, 12000);
 })
 </script>
 
@@ -77,7 +85,6 @@ onMounted(async () => {
 }
 
 @keyframes lqt {
-
   0%,
   100% {
     background-image: linear-gradient(#77E290 40px, transparent 0);
@@ -108,7 +115,6 @@ onMounted(async () => {
 }
 
 @keyframes spinx {
-
   0%,
   49% {
     transform: rotate(0deg);

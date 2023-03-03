@@ -35,12 +35,11 @@ const schema = Yup.object().shape({
         .required('Este campo é obrigatório'),
     weightObjective: Yup.string()
         .required('Este campo é obrigatório'),
-    dietFrequency: Yup.number()
-        .required('Este campo é obrigatório')
-        .max(7, 'O valor máximo permitido é 7'),
     mealFrequency: Yup.number()
+        .typeError("Este campo deve ser um número")
         .required('Este campo é obrigatório')
-        .max(6, 'O valor máximo permitido é 6'),
+        .min(3, 'Não é recomendável que se façam menos de 3 refeições no dia')
+        .max(6, 'Não é recomendável que se façam mais de 6 refeições no dia'),
 });
 
 const handleSubmit = async (values: Object) => {
@@ -67,7 +66,7 @@ const handleSubmit = async (values: Object) => {
                         <Field as="select" class="_input m-0" name="providerGender" id="gender"
                             :class="{ 'border-red-600': errors.providerGender }">
                             <option disabled selected value="">Gênero</option>
-                            <option value="homen">Homem</option>
+                            <option value="homem">Homem</option>
                             <option value="mulher">Mulher</option>
                         </Field>
                         <div class="text-sm text-red-600">{{ errors.providerGender }}</div>
@@ -126,21 +125,12 @@ const handleSubmit = async (values: Object) => {
                             <Field as="select" class="_input m-0" name="weightObjective" id="activity-level"
                                 :class="{ 'border-red-600': errors.weightObjective }">
                                 <option disabled selected value="">Objetivo</option>
+                                <option value="perda de peso">Manter peso</option>
                                 <option value="perda de peso">Perda de peso</option>
                                 <option value="ganho de peso">Ganho de peso</option>
                             </Field>
                             <div class="text-sm text-red-600">{{ errors.weightObjective }}</div>
                         </div>
-
-                    </div>
-                    <div class="py-3">
-                        <label class="_sub-title" for="dietFrequency">Plano para quantos dias por semana?</label>
-                        <div class="relative">
-                            <Field name="dietFrequency" class="_input m-0" type="text" placeholder="Frequência da dieta"
-                                :class="{ 'border-red-600': errors.dietFrequency }" />
-                            <span class="text-gray-400 text-sm absolute top-3 right-3">dias/semana</span>
-                        </div>
-                        <div class="text-sm text-red-600">{{ errors.dietFrequency }}</div>
 
                     </div>
 
