@@ -11,7 +11,7 @@ const handleSubmit = async (values: Object) => {
 
     formState.isSubmitting = true;
 
-    await useFetch('http://localhost:8000/diet', {
+    await useFetch('https://nutrogic-server.herokuapp.com/diet', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,7 +19,6 @@ const handleSubmit = async (values: Object) => {
         body: values
     })
         .then((res) => {
-            debugger;
             const data: any = res.data.value;
             setResponse(data.message.content)
         })
